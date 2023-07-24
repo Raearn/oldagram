@@ -1,0 +1,121 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+img, svg, picture, video {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+main {
+    width: 375px;
+    margin:0 auto;
+    background-color: #FFF;
+}
+
+.oldagram-logo {
+    width: 127px;
+    height: 33px;
+}
+
+.my-avatar, .user-avatar {
+    border-radius: 100%;
+    width: 34px;
+    height:34px;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    height:67px;
+    padding: 0px 15px;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.user-header {
+    display: flex;
+    padding:10px;
+    align-items: center;
+}
+
+.user-header-text {
+    padding-left: 7px;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-header-text p {
+    font-size: 12px;
+}
+
+.action-btn {
+    width: 22px;
+    height: 22px;
+
+}
+
+
+
+.post-section {
+    display:flex;
+    flex-direction: column;
+}
+
+.action-section {
+    display:flex;
+    align-items: center;
+    padding-left:8px;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    gap:10px;
+}
+
+.likes-section {
+    padding:0 13px;
+}
+
+.comment-section {
+    padding: 13px;
+    font-size: 13px;
+}
+
+.username-comment {
+    font-weight: 700;
+}
+
+.user-post {
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.heart {
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+.heart.clicked, .heart:hover {
+    filter: invert(10%) sepia(71%) saturate(6364%) hue-rotate(357deg) brightness(102%) contrast(114%);
+}
