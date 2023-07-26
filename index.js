@@ -32,9 +32,11 @@ const main = document.querySelector(".main-body")
 
 function renderBody(arr) {
 
+    let text = ""
+    
     for (let i = 0; i < posts.length; i++) {
 
-        main.innerHTML += `<section class="user-post" data-postid="${i}">
+        text += `<section class="user-post" data-postid="${i}">
 
         <div class="user-header">
             <img src="${posts[i]["avatar"]}" alt="" class="user-avatar">
@@ -68,7 +70,7 @@ function renderBody(arr) {
 
     </section>`
     }
-
+    main.innerHTML +=
 }
 
 renderBody()
