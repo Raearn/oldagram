@@ -70,7 +70,7 @@ function renderBody(arr) {
 
     </section>`
     }
-    main.innerHTML +=
+    main.innerHTML += text
 }
 
 renderBody()
